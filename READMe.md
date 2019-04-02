@@ -7,8 +7,7 @@ KEY_F* are the pathfinding algoritms
 
 KEY_KP* are for the brushes on the front. 
 
-
-#Flask webapp
+# Flask webapp
 The webapp directory contains a Flask webapp with the remote. 
 
 Run the app with
@@ -16,3 +15,5 @@ Run the app with
 python3 app.py
 ```
 
+## Screenshot
+![alt text](https://github.com/foarsitter/philips-fc8822/blob/master/webapp_screenshot.PNG)

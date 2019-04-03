@@ -24,19 +24,18 @@
             width: 50px;
         }
 
-        form {
-            height: auto!important;
+        #remote {
+            height: auto !important;
             border: 1px solid black;
             border-radius: 40px;
             padding: 25px;
         }
-
     </style>
 </head>
 <body class="h-100">
 <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
-        <form method="post" class="text-center col-4">
+        <form method="post" class="text-center col-4" id="remote">
             <div class="row">
                 <div class="offset-4 col-4">
                     <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_UP"><i
@@ -143,6 +142,28 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(function () {
+        $("button").click(function (e) {
+
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+
+            var key = $(this).val();
+
+
+            $.ajax({
+                type: "POST",
+                url: "/",
+                data: {'button': key}, // serializes the form's elements.
+                success: function (data) {
+                    console.log('executed '+ key)
+                }
+            });
+        });
+    });
+
+
+</script>
 </body>
 </html>
 

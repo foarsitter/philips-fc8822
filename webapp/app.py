@@ -1,6 +1,7 @@
 import os
 from functools import wraps
 
+from dotenv.environ import getenv
 from flask import Flask, request, redirect, render_template, Response
 
 
@@ -8,7 +9,11 @@ def check_auth(username, password):
     """This function is called to check if a username /
     password combination is valid.
     """
-    return username == 'pi' and password == 'raspberry'
+
+    env_password = getenv('HTTP_PASSWORD', cast=str)
+    env_username = getenv('HTTP_USERNAME', cast=str)
+
+    return username == env_username and password == env_password
 
 
 def authenticate():

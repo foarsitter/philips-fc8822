@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,86 +15,127 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
           integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
     <title>Philips FC8822 clean!</title>
+    <style>
+        .col-4, .col-3 {
+            height: 50px;
+        }
 
+        button {
+            width: 50px;
+        }
+
+        form {
+            height: auto!important;
+            border: 1px solid black;
+            border-radius: 40px;
+            padding: 25px;
+        }
+
+    </style>
 </head>
-<body>
-<form method="post">
-
-    <div class="remote text-center offset-2 col-md-8">
-        <div class="row">
-            <div class="offset-4 col-4">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_UP"><i class="fa fa-angle-up"></i></button>
+<body class="h-100">
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <form method="post" class="text-center col-4">
+            <div class="row">
+                <div class="offset-4 col-4">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_UP"><i
+                            class="fa fa-angle-up"></i></button>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4 text-right">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_LEFT"><i class="fa fa-angle-left"></i></button>
+            <div class="row">
+                <div class="col-4 text-right">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_LEFT"><i
+                            class="fa fa-angle-left"></i></button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_POWER"><i
+                            class="fa fa-power-off"></i></button>
+                </div>
+                <div class="col-4 text-left">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_RIGHT"><i
+                            class="fa fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="col-4">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_POWER"><i class="fa fa-power-off"></i></button>
+            <div class="row">
+                <div class="offset-4 col-4">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_DOWN"><i
+                            class="fa fa-angle-down"></i></button>
+                </div>
             </div>
-            <div class="col-4 text-left">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_RIGHT"><i class="fa fa-angle-right"></i>
-                </button>
+            <div class="row my-5">
+                <div class="col-12 text-center"><h1 class="text-uppercase">Philips</h1></div>
             </div>
-        </div>
-        <div class="row">
-            <div class="offset-4 col-4">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_DOWN"><i class="fa fa-angle-down"></i></button>
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_1"><i
+                            class="fa fa-plus-circle"></i></button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_2"><i
+                            class="fa fa-circle"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_3"><i
+                            class="fa fa-dot-circle"></i></button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_4"><i
+                            class="fa fa-adjust"></i>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="offset-4 col-4 text-uppercase">philips</div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_1"><i class="fa fa-plus-circle"></i></button>
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_F1"><i
+                            class="fa fa-level-up-alt"></i></button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_F2"><i
+                            class="fa fa-redo"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_F3"><i
+                            class="fa fa-retweet"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_F4"><i
+                            class="fa fa-waze"></i>
+                    </button>
+                </div>
             </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_2"><i class="fa fa-circle"></i></button>
+            <div class="row">
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_HOME"><i
+                            class="fa fa-home"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_KP1"><i
+                            class="fa fa-stop"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_KP2"><i
+                            class="fa fa-play"></i>
+                    </button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-outline-dark" type="submit" name="button" value="KEY_KP3"><i
+                            class="fa fa-fast-forward"></i></button>
+                </div>
             </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_3"><i class="fa fa-dot-circle"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_4"><i class="fa fa-adjust"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_F1"><i class="fa fa-level-up-alt"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_F2"><i class="fa fa-redo"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_F3"><i class="fa fa-retweet"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_F4"><i class="fa fa-waze"></i></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_HOME"><i class="fa fa-home"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_KP1"><i class="fa fa-stop"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_KP2"><i class="fa fa-play"></i></button>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-default" type="submit" name="button" value="KEY_KP3"><i class="fa fa-fast-forward"></i></button>
-            </div>
-        </div>
+        </form>
     </div>
-</form>
-
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
